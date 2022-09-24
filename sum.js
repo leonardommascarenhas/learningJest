@@ -8,3 +8,9 @@ export const capitalize = (string) => {
     if (strArray[i].toUpperCase() == strArray[i]) return strArray[i];
   }
 };
+
+export const reverseString = (string) => {
+  return string.split("").reverse().join("");
+};
+
+console.log(reverseString("reverse"));
