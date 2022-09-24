@@ -13,4 +13,20 @@ export const reverseString = (string) => {
   return string.split("").reverse().join("");
 };
 
-console.log(reverseString("reverse"));
+export class Calculator {
+  constructor(result) {
+    this.result = result;
+  }
+  add(a, b) {
+    return (this.result = a + b);
+  }
+  sub(a, b) {
+    return (this.result = a - b);
+  }
+  mult(a, b) {
+    return (this.result = a * b);
+  }
+  divide(a, b) {
+    return (this.result = a / b);
+  }
+}
